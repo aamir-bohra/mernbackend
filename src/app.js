@@ -10,7 +10,7 @@ const Register = require("./models/registers");
 const { json } = require("express");
 const { log } = require("console");
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 const static_path = path.join(__dirname, "../public" );
 const template_path = path.join(__dirname, "../templates/views" );
@@ -124,12 +124,12 @@ app.post("/login", async(req, res) =>{
 // const jwt = require("jsonwebtoken");
 
 // const createToken = async() => {
-//     const token = await jwt.sign({_id:"5fb86aaf569ea945f8bcd2e1"}, "mynameisvinodbahadurthapayoutuber", {
+//     const token = await jwt.sign({_id:"5fb86aaf569ea945f8bcd2e1"}, "mynameisaamirbohra", {
 //         expiresIn:"2 seconds"
 //     });
 //     console.log(token);
 
-//     const userVer = await jwt.verify(token, "mynameisvinodbahadurthapayoutuber");
+//     const userVer = await jwt.verify(token, "mynameisaamirbohra");
 //     console.log(userVer);
 // }
 
